@@ -15,3 +15,20 @@ if (true) {
 console.log(a);
 // console.log(b);
 // console.log(c);
+
+// nested function scope 
+
+function one()
+{
+    const username = "AKIB"
+
+    function two(){
+        const website = "akib.com"
+        console.log(username);
+    }
+    // console.log(website);
+
+    two()
+}
+
+one()
