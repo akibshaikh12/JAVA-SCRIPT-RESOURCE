@@ -5,14 +5,14 @@ let a = 300
 if (true) {
     let a = 10
     const b = 20
-    console.log("INNER: ", a);
+    // console.log("INNER: ", a);
     function addnum(){
         return a + b
     }
 }
 
 
-console.log(a);
+// console.log(a);
 // console.log(b);
 // console.log(c);
 
@@ -28,7 +28,35 @@ function one()
     }
     // console.log(website);
 
-    two()
+    // two()
 }
 
-one()
+// one()
+
+if (true) {
+    const username = "AKIB"
+    if (username === "AKIB") {
+        const website = "akib.com"
+        // console.log(username + website);
+        
+    }
+    // console.log(website);
+}
+
+// console.log(username);
+
+//++++++++++++++++++++++++ interesting ++++++++++++++++++++++++
+
+console.log(addone(5))
+
+function addone(num) {
+    return num + 1
+}
+
+
+
+const addTwo = function (num) {
+    return num + 2
+}
+
+addTwo(5)
